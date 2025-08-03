@@ -368,4 +368,4 @@ element.addEventListener('click', callback, true)`,
     ],
     fullResponse: '',
   },
-] as const;
+];

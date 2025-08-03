@@ -2,8 +2,14 @@ import { HTML_TS } from './html';
 import { HTML_QUESTIONS_M_S } from './html_m_s';
 import { REACT_JS } from './react';
 
-export const ALL_QUESTIONS_BY_ID = new Map<string, any>([
-  ['01', [HTML_QUESTIONS_M_S, ...HTML_TS]],
+type Questions = {
+  question: string;
+  response: string[];
+  fullResponse: string;
+};
+
+export const ALL_QUESTIONS_BY_ID = new Map<string, Questions[]>([
+  ['01', [...HTML_QUESTIONS_M_S, ...HTML_TS]],
   ['2', REACT_JS],
   //['3', questionId_3],
   // ['4', questionId_4],

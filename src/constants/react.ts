@@ -272,4 +272,4 @@ export const REACT_JS = [
     ],
     fullResponse: '',
   },
-] as const;
+];

@@ -1,13 +1,26 @@
+import { HTML_TS } from './html';
+import { HTML_QUESTIONS_M_S } from './html_m_s';
 import { REACT_JS } from './react';
 
-export const ALL_QUESTIONS_BY_ID = new Map([
-  //['1', questionId_1],
+export const ALL_QUESTIONS_BY_ID = new Map<string, any>([
+  ['01', [HTML_QUESTIONS_M_S, ...HTML_TS]],
   ['2', REACT_JS],
   //['3', questionId_3],
   // ['4', questionId_4],
 ]);
 
 export const DEFAULT_COLLECTIONS_QUESTION = [
+  {
+    id: '01',
+    title: 'Html',
+    subtitle: 'Html',
+    level: 'A1',
+    category: ['Other'],
+    topic: ['CSS'],
+    learningStyle: 'Selecting/Matching',
+    learnByInterest: 'Books',
+    learnBySkill: 'Reading',
+  },
   {
     id: '1',
     title: 'CSS',

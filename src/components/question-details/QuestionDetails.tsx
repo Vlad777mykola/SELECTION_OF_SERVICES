@@ -54,13 +54,8 @@ export const QuestionDetails = ({
   };
 
   const goNextQuestion = () => {
-    setId((prevId) => {
-      if (prevId !== questions.length - 1) {
-        return prevId + 1;
-      }
-
-      return 0;
-    });
+    const randomIndex = Math.floor(Math.random() * questions.length - 1);
+    setId(randomIndex);
   };
 
   const correctVariants = [question.response[0]];

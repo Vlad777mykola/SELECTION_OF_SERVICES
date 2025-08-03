@@ -1,18 +1,24 @@
-import { questionId_1, questionId_3 } from './questionData';
+import { HTML_TS } from './html';
 import { REACT_JS } from './react';
 
-export const ALL_QUESTIONS_BY_ID = new Map([
-	//['1', questionId_1],
+type Question = {
+	readonly  question: string;
+	readonly  response: readonly string[];
+	readonly fullResponse: string;
+};
+
+type QuestionsArray = readonly Question[];
+
+export const ALL_QUESTIONS_BY_ID = new Map<string, QuestionsArray>([
+	['1', HTML_TS],
 	['2', REACT_JS],
-	//['3', questionId_3],
-	// ['4', questionId_4],
 ]);
 
 export const DEFAULT_COLLECTIONS_QUESTION = [
 	{
 		id: '1',
-		title: 'CSS',
-		subtitle: 'CSS',
+		title: 'HTML',
+		subtitle: 'HTML',
 		level: 'A1',
 		category: ['Other'],
 		topic: ['CSS'],

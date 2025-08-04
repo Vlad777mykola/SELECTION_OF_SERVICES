@@ -8,9 +8,7 @@ export const HTML_TS = [
   },
   {
     question: '<ol> vs <ul>',
-    response: [
-      'numbered list & unnumbered list',
-    ],
+    response: ['numbered list & unnumbered list'],
     fullResponse: '',
   },
   {
@@ -22,16 +20,12 @@ export const HTML_TS = [
   },
   {
     question: 'Attributes of IMG tag',
-    response: [
-      'src, alt',
-    ],
+    response: ['src, alt'],
     fullResponse: '',
   },
   {
     question: 'How to import script/CSS files?',
-    response: [
-      'tag link style rel & tag script',
-    ],
+    response: ['tag link style rel & tag script'],
     fullResponse: '',
   },
   {
@@ -43,9 +37,7 @@ export const HTML_TS = [
   },
   {
     question: 'What is the BOM?',
-    response: [
-      'browser document model',
-    ],
+    response: ['browser document model'],
     fullResponse: '',
   },
   {
@@ -85,9 +77,7 @@ export const HTML_TS = [
   },
   {
     question: 'Inline-block element?',
-    response: [
-      'combines the properties of both.',
-    ],
+    response: ['combines the properties of both.'],
     fullResponse: '',
   },
   {
@@ -113,9 +103,7 @@ export const HTML_TS = [
   },
   {
     question: 'What is the target="_blank" attribute in <a>?',
-    response: [
-      'This opens the link in a new browser tab.',
-    ],
+    response: ['This opens the link in a new browser tab.'],
     fullResponse: '',
   },
   {
@@ -126,7 +114,8 @@ export const HTML_TS = [
     fullResponse: '',
   },
   {
-    question: 'What is the difference between <button> and <input type="submit">?',
+    question:
+      'What is the difference between <button> and <input type="submit">?',
     response: [
       '<button> is more flexible: can contain HTML inside (icons, spans, etc.). <input type="submit"> is self-closing, less customizable.',
     ],
@@ -148,9 +137,7 @@ export const HTML_TS = [
   },
   {
     question: 'What is lazy loading for images?',
-    response: [
-      'Lazy loading of images. Attribute.',
-    ],
+    response: ['Lazy loading of images. Attribute.'],
     fullResponse: '',
   },
   {
@@ -176,58 +163,42 @@ export const HTML_TS = [
   },
   {
     question: 'Tag to create a table?',
-    response: [
-      '<table>',
-    ],
+    response: ['<table>'],
     fullResponse: '',
   },
   {
     question: 'Page title tag?',
-    response: [
-      'title',
-    ],
+    response: ['title'],
     fullResponse: '',
   },
   {
     question: 'Can I nest <div> inside <span>?',
-    response: [
-      'Not recommended (block to line)',
-    ],
+    response: ['Not recommended (block to line)'],
     fullResponse: '',
   },
   {
     question: 'Attribute to create a tooltip?',
-    response: [
-      'title',
-    ],
+    response: ['title'],
     fullResponse: '',
   },
   {
     question: 'How does an HTML document close?',
-    response: [
-      '</html>',
-    ],
+    response: ['</html>'],
     fullResponse: '',
   },
   {
     question: 'Tag to display code?',
-    response: [
-      '<code>, <pre>',
-    ],
+    response: ['<code>, <pre>'],
     fullResponse: '',
   },
   {
     question: 'What is a viewport?',
-    response: [
-      'The area of the visible part of the site on the device.',
-    ],
+    response: ['The area of the visible part of the site on the device.'],
     fullResponse: '',
   },
   {
     question: 'How to post a comment in HTML?',
-    response: [
-      '<!-- comment -->',
-    ],
+    response: ['<!-- comment -->'],
     fullResponse: '',
   },
   {
@@ -238,7 +209,8 @@ export const HTML_TS = [
     fullResponse: '',
   },
   {
-    question: 'What are semantic tags and why are they needed? Give examples of such tags.',
+    question:
+      'What are semantic tags and why are they needed? Give examples of such tags.',
     response: [
       "These are HTML tags that clearly describe the content and purpose of an element in the page structure. They don't just display content, they give it semantic meaning.",
     ],

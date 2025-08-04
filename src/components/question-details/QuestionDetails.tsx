@@ -19,6 +19,10 @@ export const QuestionDetails = ({
     .filter((v) => v !== question?.response[0]);
 
   useEffect(() => {
+    goNextQuestion();
+  }, []);
+
+  useEffect(() => {
     const variantsFromQuestion = getRandomElements(
       variantsFromQuestions || [],
       2

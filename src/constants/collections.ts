@@ -9,18 +9,18 @@ type Questions = {
 };
 
 export const ALL_QUESTIONS_BY_ID = new Map<string, Questions[]>([
-  ['01', [...HTML_QUESTIONS_M_S, ...HTML_TS]],
+  ['1', [...HTML_QUESTIONS_M_S, ...HTML_TS]],
   ['2', REACT_JS],
 ]);
 
 export const DEFAULT_COLLECTIONS_QUESTION = [
 	{
 		id: '1',
-		title: 'CSS',
-		subtitle: 'CSS',
+		title: 'HTML',
+		subtitle: 'HTML',
 		level: 'A1',
 		category: ['Other'],
-		topic: ['CSS'],
+		topic: ['HTML'],
 		learningStyle: 'Selecting/Matching',
 		learnByInterest: 'Books',
 		learnBySkill: 'Reading',

@@ -32,7 +32,7 @@ export const CSS_TS = [
       `The gist: modularity, CSS categorization (base, layout, module, state, theme).
        Pros: scalability, good organization.
        Cons: requires strict adherence to rules.
-       When to use: large UI libraries, theming.`,
+       When to use: large UI libraries, theming...`,
     ],
     fullResponse: '',
   },

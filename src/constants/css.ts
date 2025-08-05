@@ -573,58 +573,309 @@ export const CSS_TS = [
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'What CSS frameworks do you know?',
     response: [
-      
+      `Universal: Bootstrap, Foundation, Bulma, Ulkit, Metro 4 UI.
+       Utility CSS frameworks: Tailwind CSS, Windi CSS, Tachyons, Basscss.
+       Component libraries (based on CSS frameworks): Material UI (MUI), Chakra UI, ShadCN/UI, DaisyUI.
+       Other options: Skeleton is a minimalist, old framework, Shoelace is a modern Web Components with theming, Pure.css is a lightweight CSS framework from Yahoo, Picnic CSS is a simple and clean framework.
+      `
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'How do you organize CSS styles in large projects?',
     response: [
-      
+      `1. Methodologies for organizing styles: BEM (Block-Element-Modifier), SMACSS (Scalable and Modular Architecture for CSS).
+       2. Project structure.
+       3. CSS approaches in frameworks: Tailwind CSS, CSS-in-JS (React/Next.js, styled-components, Emotion).
+       4. Tools:  SCSS or PostCSS — for variables, mixins, nesting, CSS Modules — for isolating styles in components, Linting: stylelint, prettier — auto-checking styles, PurgeCSS — removing unused classes (relevant for Tailwind), Design Tokens — variables for colors, spacing, font-size, which are common to the entire project.
+       5. Recommendations for practice: Modularity, Cleanliness, Reusability, Transparency, Linter + Prettier.
+       `
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'How do you choose between using CSS preprocessors like Sass or Less in your projects?',
     response: [
-      
+      `🔹Large or long-term project: 
+      🔹 2. The team is familiar with Sass
+      🔹 3. Classic stack (HTML + CSS + JS, without React/Angular)`
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'How do you choose between not using CSS preprocessors like Sass or Less in your projects?',
     response: [
-      
+      `Tailwind CSS is used,
+       CSS-in-JS or styled-components,
+       Small or MVP project.`
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'How do you implement the concept of a "component" approach in your CSS code?',
     response: [
-      
+      `CSS Modules (in React, Next.js, Vue etc),  CSS-in-JS (styled-components, Emotion, Stitches, Vanilla Extract), Tailwind CSS + Components, SCSS + BEM + Structure`
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'What strategies do you use to create reusable and easily modifiable components in your styles?',
     response: [
-      
+      `Component Isolation (Scoped Styling), Using variables and tokens (Design Tokens), Creating utilities and mixins, Variability through modifiers (BEM, classes, props),
+       Composition of styles, Tailwind + @apply or components,
+       Theming (dark/light) — globally or via context,
+       Typed interface for styles (in React).
+       `
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'What CSS preprocessors do you know?',
     response: [
-      
+      `Sass / SCSS, LESS, Stylus, PostCSS (conditionally a preprocessor), CSS-in-JS (conditional)`
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'Pluses Sass / SCSS',
     response: [
-      
+      `Variables ($primary-color), Nesting,
+       Mixins (@mixin, @include),
+       Inheritance (@extend),
+      Functions (darken(), lighten(), map-get()),
+      Custom functions and loops (@for, @each, @if),
+      Modules (@use, @forward) — replacement for the old @import.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Pluses LESS',
+    response: [
+      `Variables (@color),
+       Mixins (functions without calling),
+       Numerical operations,
+        Nesting,
+        Guards (conditional mixins),`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Pluses Stylus',
+    response: [
+      `Very concise syntax. Supports variables, mixins, nesting, loops. Can be written as SCSS or as Python-like code`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Pluses PostCSS (conditionally a preprocessor)',
+    response: [
+      `Plugin architecture, Autoprefixing, CSS Variables fallback, Support for future specifications (via postcss-preset-env),
+       Works with Tailwind CSS.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'CSS-in-JS (conditional)',
+    response: [
+      `Full Dynamics via JS, Themes, Props, Conditional Styles, Isolation, Typing (in TypeScript).`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Why is translate sometimes better than position:absolute when writing styles?',
+    response: [
+      `Better for performance,
+        Does not change DOM placement,
+        Centers elements,
+        Safer for responsiveness`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'What are the features and differences between flex and grid?',
+    response: [
+      `Flexbox: Focused on distributing space in one direction, Works well with dynamic/responsive content.
+       Flexbox: For page structure, layouts, galleries, landing pages.
+       Grid: Oriented to a two-dimensional grid - row and column management. Gives full control over the position of elements in the grid.
+       Grid: For local positioning of elements inside blocks (menus, buttons, alignment).
+      `
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'What class naming systems do you know?',
+    response: [
+      `BEM (Block — Element — Modifier), SMACSS (Scalable and Modular Architecture for CSS), OOCSS (Object-Oriented CSS), Atomic CSS / Utility-First, ITCSS (Inverted Triangle CSS), Functional CSS, Hybrid / Custom Naming.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'How do you compile CSS?',
+    response: [
+      `I write in Sass/SCSS
+       I package with Webpack/Vite/Parcel
+       I process PostCSS (autoprefixer, minification)
+       I use CSS Modules or scoped styles
+       I optimize for production (minification, purge)
+       I generate source maps for dev.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Is there a place for the CSS float property on the modern web?',
+    response: [
+      `It should only be used for content-related decorative purposes, not for building layouts or interface layouts.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'What is responsive typography?',
+    response: [
+      `it is an approach to text design that provides optimal readability and aesthetics on any device and screen size.
+       Font size, line-height, padding, text block width, and other typographic parameters automatically or flexibly adapt to the screen width.
+      `
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Tell us about your vision of modern responsive web design?',
+    response: [
+      `It's no longer just a set of media queries that change styles on different screens. It's a flexible, context-aware system where the interface adapts not only to the width of the window, but also to the size of components, content, device type, orientation, and so on.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'what alternatives exist for media queries?',
+    response: [
+      `Container Queries, CSS clamp() / min() / max(), Flexbox / Grid з auto-fit / auto-fill,  JavaScript + ResizeObserver, Tailwind’s Responsive Utilities / Utility-first`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Justify the choice of units of measurement for breakpoints and their meaning.',
+    response: [
+      `I choose em or rem units for breakpoints because they adapt to changes in the base font and are better for accessibility. I base the values on content breakpoints — where components lose visual integrity. I typically use 48em, 64em, 80em.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'What is the difference between Node Sass and Dart Sass?',
+    response: [
+      `Dart Sass is a modern, official, supported, and fully featured implementation of Sass. Node Sass is deprecated, does not support new syntax, and is no longer being developed.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'What are the features of migration? from node sass to dart sass?',
+    response: [
+      `Package replacement, Compatibility with old syntax, Behavior differences, Replacing @import with @use / @forward (optional), May need to update Webpack/build system, Test components with dependencies, Create a planned migration`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Name the differences between @import, @use, and @forward in Sass.',
+    response: [
+      `@import -> Imports a file and adds its contents to the global scope.
+       @use -> Imports a file and creates a namespace, preventing conflicts.
+       @forward -> Forwards styles from one module to another, allowing you to create a library of reusable styles.
+       @use and @forward are preferred over @import because they provide better modularity and avoid global scope pollution.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'What is style guide?',
+    response: [
+      `This is a collection of rules and examples for using styles, components, and patterns in a project.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Instruments for style guide creation?',
+    response: [
+      `Storybook, Figma, Design Tokens, Tailwind CSS or Atomic CSS, Markdown / MDX-documentation, Playroom / Zeroheight / Backlight, Linting & Style Rules.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'What are the alternatives to overflow: hidden?',
+    response: [
+      ` clip-path, mask-image, visibility: hidden, position: absolute with negative coordinates, transform: translate(-100%, -100%)`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'The designer insists on customizing styles for all elements of a complex form. What should you do?',
+    response: [
+      `Hear and understand the requirements,
+        I propose a balance between customization and scalability,
+        I create a prototype / proof of concept,
+        I use CSS variables and design tokens,
+        I agree on the limits of customization,
+        If the customization is very deep, I suggest using CSS-in-JS or CSS modules`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'What are the use cases for @media in CSS besides screen?',
+    response: [
+      `print, speech, all,  braille, tty, projection, handheld, tv, embossed, combination of conditions`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'How do you solve problems with high volume of styles and maintaining large code bases in large projects?',
+    response: [
+      `Clear structure, style isolation, variable centralization, and design systems are the main tools for maintaining large CSS code bases. As well as automation and regular monitoring.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'What approaches and methodologies do you use to organize CSS code at the architecture level?',
+    response: [
+      `CSS Organization Methodologies, SMACSS (Scalable and Modular Architecture for CSS), CSS File Structure, Tools and Standardization, Design Tokens, Cross-Team Collaboration via UI Kit/Styleguide, "Atomic" or Utility-first Approach (Tailwind CSS)`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'How do you optimize page loads, including using Critical CSS and other strategies to reduce time to first byte and time to render?',
+    response: [
+      `Critical CSS, CSS splitting, Lazy loading, SSR and Hydration, Resource Prioritization, Caching and Minification, Font Optimization, Monitoring Tools.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'How do you solve the problem of cross-browser compatibility at the development stage and how to avoid misunderstandings between developers and the QA team when testing on different browsers?',
+    response: [
+      `Clear definition of target browsers, Use of modern tools, Real-time testing, Process and communication with QA, Shared expectations with QA/designers, Fallbacks, Documentation and conventions.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'How to implement server-side rendering (SSR) or static site generation (SSG) with CSS-in-JS? What challenges might you face in this context?',
+    response: [
+      `The main task is to ensure correct generation and injection of styles on the server and avoid hydration problems on the client.
+       Challenges: 
+       Flickering (FOUC) — styles not immediately applied on the client.
+        Mismatch of styles between server and client.
+        Increased HTML size with SSR.
+        Custom props or dynamic styles with hydration.
+      `
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Imagine that you have learned about your upcoming project. It is a large public multilingual website, including Arabic and Japanese. You will be assisted by two junior front-end developers. Describe how you will plan the CSS architecture and prepare your juniors for such a project.',
+    response: [
+      `I approach such a project strategically — CSS architecture, UI system, navigation between languages, and mentoring should be planned in advance.`
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'You need to create a gallery of images that should scroll smoothly when scrolling sideways within the gallery. How would you implement this? Is it possible to do this without JS?',
+    response: [
+      `A smooth horizontal scrolling gallery is possible without JavaScript using pure CSS. You can achieve the scrolling effect with smooth animations, custom scroll styles, and responsiveness.`
     ],
     fullResponse: '',
   },

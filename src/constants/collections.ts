@@ -1,3 +1,4 @@
+import { CSS_TS } from './css';
 import { HTML_TS } from './html';
 import { HTML_QUESTIONS_M_S } from './html_m_s';
 import { REACT_JS } from './react';
@@ -11,6 +12,7 @@ type Questions = {
 export const ALL_QUESTIONS_BY_ID = new Map<string, Questions[]>([
   ['1', [...HTML_QUESTIONS_M_S, ...HTML_TS]],
   ['2', REACT_JS],
+	['5', CSS_TS]
 ]);
 
 export const DEFAULT_COLLECTIONS_QUESTION = [
@@ -54,6 +56,17 @@ export const DEFAULT_COLLECTIONS_QUESTION = [
 		level: 'B2',
 		category: ['Adjectives', 'Verbs'],
 		topic: ['JS'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '5',
+		title: 'CSS',
+		subtitle: 'CSS',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['CSS'],
 		learningStyle: 'Selecting/Matching',
 		learnByInterest: 'Books',
 		learnBySkill: 'Reading',

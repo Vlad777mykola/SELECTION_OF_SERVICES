@@ -93,7 +93,7 @@ export const REACT_JS = [
   {
     question: 'Explain the concept of "lifting state up".',
     response: [
-      'Use React.memo, shouldComponentUpdate, PureComponent, or useMemo, useCallback.',
+      ' concept in React (and similar component-based frameworks) where you move the state from a child component to a common ancestor (usually the parent) so that multiple components can share and coordinate the same state.',
     ],
     fullResponse: '',
   },

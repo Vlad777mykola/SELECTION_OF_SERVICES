@@ -93,13 +93,6 @@ export const TS_TS = [
     fullResponse: '',
   },
   {
-    question: 'How do TypeScript use namespaces and modules?',
-    response: [
-      ``,
-    ],
-    fullResponse: '',
-  },
-  {
     question: 'What migration strategies from JavaScript to TypeScript do you know?',
     response: [
       `Incremental Adoption, 

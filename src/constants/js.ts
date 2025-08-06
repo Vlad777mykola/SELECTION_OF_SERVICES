@@ -1,4 +1,6 @@
-export const JS_TS = [
+import { Questions } from "./collections";
+
+export const JS_TS: Questions[] = [
   {
     question: 'List the data types in JS.',
     response: [
@@ -523,7 +525,6 @@ export const JS_TS = [
        Lazy loading sripts using async and defer attributes, Using service workers for caching and background loading, Implementing progressive loading strategies.
        Lazy loading of components in frameworks (React, Vue, Angular) using built-in features or libraries like React.lazy() and Suspense, Vue's async components, Angular's lazy loading modules.
        `,
-       ,
     ],
     fullResponse: '',
   },
@@ -635,10 +636,94 @@ export const JS_TS = [
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'If some animation on the site is slow (low FPS), how do I find out the reason?',
     response: [
-      ``,
+      `1. Open DevTools (F12) → Performance tab (or Rendering, FPS Meter):
+       In Chrome: F12 → Performance tab → click "Record" → make an animation → stop recording.
+        Look: Do the frames drop below 60 FPS?
+        What takes the most time in each frame? (JS, styles, Layout, Paint, Composite)
+        2. FPS Meter
+        In Chrome: Rendering → check the FPS meter box — you will see the real FPS in the upper right corner of the page.
+        3. Layers (Compositing layers)
+        Rendering → Layer borders — allows you to see how the browser divides the page into layers. An excessive number of layers can load the GPU.
+        4. Check Chrome Task Manager
+        Shift + Esc → see which tabs or resources use the most CPU/GPU.`,
+            ],
+    fullResponse: '',
+  },
+  {
+    question: 'What are the reasons of low FPS?',
+    response: [
+      `Inefficient JavaScript, Poor CSS animations, Large DOM or heavy elements, No GPU acceleration, Heavy images or SVG, Rendering or compositing.`,
     ],
     fullResponse: '',
   },
-];
+  {
+    question: 'What are the options for storing data on the client?',
+    response: [
+      `localStorage, sessionStorage, cookies, indexedDB, Cache API (caches)`,
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'When is caching appropriate?',
+    response: [
+      `Data changes infrequently (e.g., category list, theme settings).
+        Need to improve performance or reduce API requests.
+        Data should be reusable between pages.
+        Need offline support (for PWA or mobile app).`,
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'How do you implement authentication in your application?',
+    response: [
+      `The user enters a username/password (or authenticates via OAuth/SSO).
+       The server checks the credentials.
+       If everything is OK, the server issues a token (JWT or session cookie).`,
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'How do you implement Authorization in your application?',
+    response: [
+      `The token or session contains information about the user's role (role: admin, permissions: ['edit_user']).
+        The server checks the permissions before processing the requests.
+        The client can also restrict the UI (for example, not showing the "Delete" button).`,
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'Security: How we protect server side',
+    response: [
+      `Password hashing, CSRF protection, JWT verification, RBAC/ABAC, Rate limiting / throttling, Input sanitization.`,
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'How does splitting and lazy loading affect application performance?',
+    response: [
+      `Initial bundle size -> small.
+       First render speed -> fast.
+       Number of HTTP requests -> More, but smaller files.
+       Caching -> Simple in chunks.
+       Memory overload ->  less chances.
+      `,
+    ],
+    fullResponse: '',
+  },
+  {
+    question: 'What tools do you use for unit testing, integration testing, and interaction testing?',
+    response: [
+      `Unit test -> Jest,React components -> @testing-library/react,Mock API -> msw (Mock Service Worker),Integration tests -> Jest + React Testing Library,E2E test -> Cypress or Playwright, Coverage -> Built into Jest, or nyc, CI -> GitHub Actions / GitLab CI.`,
+    ],
+    fullResponse: '',
+  },
+  {
+    question: "There is a task to transfer data between two different websites. What are the ways to do it? What if only client side? What if we have access to the code of both sites? What if one is displayed on the other via an iframe? What if we don't have access to one of them?",
+    response: [
+      `window.postMessage, URL parameters / query string / hash,  Shared storage through cookies or IndexedDB, REST API + CORS, Storage relay through iframe + postMessage,  window.name`,
+    ],
+    fullResponse: '',
+  },
+] as const;

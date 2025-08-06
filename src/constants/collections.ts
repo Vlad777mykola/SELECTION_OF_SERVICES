@@ -3,6 +3,7 @@ import { HTML_TS } from './html';
 import { HTML_QUESTIONS_M_S } from './html_m_s';
 import { JS_TS } from './js';
 import { REACT_JS } from './react';
+import { TS_TS } from './ts';
 
 export type Questions = {
   readonly question: string;
@@ -13,6 +14,7 @@ export type Questions = {
 export const ALL_QUESTIONS_BY_ID = new Map<string, Questions[]>([
   ['1', [...HTML_QUESTIONS_M_S, ...HTML_TS]],
   ['2', REACT_JS],
+	['3', TS_TS],
 	['4', JS_TS],
 	['5', CSS_TS]
 ]);

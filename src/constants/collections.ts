@@ -5,6 +5,7 @@ import { JS_TS } from './js';
 import { REACT_JS } from './react';
 import { TS_TS } from './ts';
 import { GENERAL_QUESTIONS } from './general_questions';
+import { WEB_PERFORMANCE } from './web_performance';
 
 export type Questions = {
   readonly question: string;
@@ -19,6 +20,7 @@ export const ALL_QUESTIONS_BY_ID = new Map<string, Questions[]>([
 	['4', JS_TS],
 	['5', CSS_TS],
 	['6', GENERAL_QUESTIONS],
+	['7', WEB_PERFORMANCE]
 ]);
 
 export const DEFAULT_COLLECTIONS_QUESTION = [
@@ -84,6 +86,17 @@ export const DEFAULT_COLLECTIONS_QUESTION = [
 		level: 'B2',
 		category: ['Adjectives', 'Verbs'],
 		topic: ['General Questions'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '7',
+		title: 'Web Performance',
+		subtitle: 'Web Performance',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['Web Performance'],
 		learningStyle: 'Selecting/Matching',
 		learnByInterest: 'Books',
 		learnBySkill: 'Reading',

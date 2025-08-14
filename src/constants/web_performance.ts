@@ -247,13 +247,6 @@ export const WEB_PERFORMANCE = [
     fullResponse: '',
   },
   {
-    question: 'What is the difference between preparing and connecting front-end assets depending on whether you use HTTP1 or HTTP2 on the server?',
-    response: [
-      ``
-    ],
-    fullResponse: '',
-  },
-  {
     question: 'What is the difference between preparing and connecting front-end assets depending on whether you use HTTP1 on the server?',
     response: [
       `One request → one resource (request per connection), although modern browsers open 6–8 parallel connections.

@@ -6,6 +6,9 @@ import { REACT_JS } from './react';
 import { TS_TS } from './ts';
 import { GENERAL_QUESTIONS } from './general_questions';
 import { WEB_PERFORMANCE } from './web_performance';
+import { API_TS } from './api';
+import { NETWORK_BASICS } from './networks_basics';
+import { WORK_BACKEND } from './work_backend';
 
 export type Questions = {
   readonly question: string;
@@ -20,7 +23,10 @@ export const ALL_QUESTIONS_BY_ID = new Map<string, Questions[]>([
 	['4', JS_TS],
 	['5', CSS_TS],
 	['6', GENERAL_QUESTIONS],
-	['7', WEB_PERFORMANCE]
+	['7', WEB_PERFORMANCE],
+	['8', API_TS],
+	['9', NETWORK_BASICS],
+	['10', WORK_BACKEND]
 ]);
 
 export const DEFAULT_COLLECTIONS_QUESTION = [
@@ -97,6 +103,39 @@ export const DEFAULT_COLLECTIONS_QUESTION = [
 		level: 'B2',
 		category: ['Adjectives', 'Verbs'],
 		topic: ['Web Performance'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '8',
+		title: 'Api of browser',
+		subtitle: 'Api of browser',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['Api of browser'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '9',
+		title: 'Network Basics',
+		subtitle: 'Network Basics',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['Network Basics'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '10',
+		title: 'Work with backend',
+		subtitle: 'Work with backend',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['Work with backend'],
 		learningStyle: 'Selecting/Matching',
 		learnByInterest: 'Books',
 		learnBySkill: 'Reading',

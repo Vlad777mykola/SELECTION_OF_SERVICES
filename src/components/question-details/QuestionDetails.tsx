@@ -13,7 +13,9 @@ export const QuestionDetails = ({
   const [isCorrect, setIsCorrect] = useState<boolean>();
   const [allVariants, setAllVariants] = useState<string[]>([]);
   const questions = ALL_QUESTIONS_BY_ID.get(collectionsId);
+
   const question = questions && questions[id];
+
   const variantsFromQuestions = questions
     ?.map((q) => q.response[0])
     .filter((v) => v !== question?.response[0]);
@@ -58,7 +60,7 @@ export const QuestionDetails = ({
   };
 
   const goNextQuestion = () => {
-    const randomIndex = Math.floor(Math.random() * questions.length - 1);
+    const randomIndex = Math.floor(Math.random() * (questions.length - 1));
     setId(randomIndex);
   };
 

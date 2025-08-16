@@ -9,6 +9,9 @@ import { WEB_PERFORMANCE } from './web_performance';
 import { API_TS } from './api';
 import { NETWORK_BASICS } from './networks_basics';
 import { WORK_BACKEND } from './work_backend';
+import { DATA_STRUCTURE } from './data_structure';
+import { GIT_TS } from './git';
+import { TESTING } from './testing';
 
 export type Questions = {
   readonly question: string;
@@ -26,7 +29,10 @@ export const ALL_QUESTIONS_BY_ID = new Map<string, Questions[]>([
 	['7', WEB_PERFORMANCE],
 	['8', API_TS],
 	['9', NETWORK_BASICS],
-	['10', WORK_BACKEND]
+	['10', WORK_BACKEND],
+	['11', DATA_STRUCTURE],
+	['12', GIT_TS],
+	['13', TESTING],
 ]);
 
 export const DEFAULT_COLLECTIONS_QUESTION = [
@@ -136,6 +142,39 @@ export const DEFAULT_COLLECTIONS_QUESTION = [
 		level: 'B2',
 		category: ['Adjectives', 'Verbs'],
 		topic: ['Work with backend'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '11',
+		title: 'Data structure',
+		subtitle: 'Data structure',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['Data structure'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '12',
+		title: 'Git',
+		subtitle: 'Git',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['Git'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '13',
+		title: 'Testing',
+		subtitle: 'Testing',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['Testing'],
 		learningStyle: 'Selecting/Matching',
 		learnByInterest: 'Books',
 		learnBySkill: 'Reading',

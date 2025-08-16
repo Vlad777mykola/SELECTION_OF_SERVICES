@@ -264,51 +264,56 @@ export const DATA_STRUCTURE = [
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'What non-trivial data structures have you worked with or know of?',
     response: [
-      ``,
+      `Trees and their variations, Graph structures, Structures for specific tasks, Probabilistic and exotic.`,
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'Tell us about CRDT.',
     response: [
-      ``,
+      `These are data structures that allow copies of data on different nodes in a distributed system to be modified simultaneously and independently without centralized synchronization, and then automatically merged into a single consistent version.`,
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'What optimization algorithms were used to improve the performance of large applications?',
     response: [
-      ``,
+      `Data structure and query optimization algorithms, Algorithms for working with streams and large amounts of data, Multithreading optimization algorithms, Caching and memory access optimization, Frontend/UX optimization algorithms, Heuristic and classical optimization algorithms.`,
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'What sorting algorithms do you think are most effective for processing large data sets?',
     response: [
-      ``,
+      `If everything fits in RAM → Timsort or Introsort.
+        If on disk (external sort) → MergeSort (external merge).
+        If numeric data with a small range → Counting / Radix Sort.
+        If cluster / big data → MapReduce Sort / Sample Sort.`,
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'How to use dynamic programming in real projects?',
     response: [
-      ``,
+      `Route and Logistics Optimization, Financial Calculations, Natural Language Processing/Search, Computer Graphics and CV, Scheduling and Planning.`,
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'Example task of using dynamic programming',
     response: [
-      ``,
+      `optimize the cost of using cloud servers (AWS, GCP).
+        AWS has different tariffs: On-Demand, Reserved Instances, Spot. You need to choose the optimal set a few months in advance.`,
     ],
     fullResponse: '',
   },
   {
-    question: '',
+    question: 'Tell us about the practical use of data structures such as AVL trees or red-black trees.',
     response: [
-      ``,
+      `AVL tree: more tightly balanced → better for searching (O(log n) guaranteed), but slower for insertion/deletion.
+        Red-black tree: less balanced, but faster for insertion/deletion → more popular in system software.`,
     ],
     fullResponse: '',
   },

@@ -12,6 +12,9 @@ import { WORK_BACKEND } from './work_backend';
 import { DATA_STRUCTURE } from './data_structure';
 import { GIT_TS } from './git';
 import { TESTING } from './testing';
+import { ACCESSIBILITY } from './accessibility';
+import { ARCHITECTURE } from './architecture';
+import { SECURITY } from './security';
 
 export type Questions = {
   readonly question: string;
@@ -33,6 +36,9 @@ export const ALL_QUESTIONS_BY_ID = new Map<string, Questions[]>([
 	['11', DATA_STRUCTURE],
 	['12', GIT_TS],
 	['13', TESTING],
+	['14', ACCESSIBILITY],
+	['15', ARCHITECTURE],
+	['16', SECURITY]
 ]);
 
 export const DEFAULT_COLLECTIONS_QUESTION = [
@@ -175,6 +181,39 @@ export const DEFAULT_COLLECTIONS_QUESTION = [
 		level: 'B2',
 		category: ['Adjectives', 'Verbs'],
 		topic: ['Testing'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '14',
+		title: 'Accessibility',
+		subtitle: 'Accessibility',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['Accessibility'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '15',
+		title: 'Architercture',
+		subtitle: 'Architercture',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['Architercture'],
+		learningStyle: 'Selecting/Matching',
+		learnByInterest: 'Books',
+		learnBySkill: 'Reading',
+	},
+	{
+		id: '16',
+		title: 'Security',
+		subtitle: 'Security',
+		level: 'B2',
+		category: ['Adjectives', 'Verbs'],
+		topic: ['Security'],
 		learningStyle: 'Selecting/Matching',
 		learnByInterest: 'Books',
 		learnBySkill: 'Reading',
